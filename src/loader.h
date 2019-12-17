@@ -1,1 +1,1 @@
-void AddMyTopArenaScripts();
+void AddTopArenaScripts();

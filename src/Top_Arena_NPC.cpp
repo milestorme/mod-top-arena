@@ -8,6 +8,8 @@
 #include "ArenaTeam.h"
 #include "ArenaTeamMgr.h"
 #include "World.h"
+#incluee "Player.h"
+#include "Chat.h"
 
 enum ArenaRankActionIds {
     ARENA_2V2_LADDER = GOSSIP_ACTION_INFO_DEF + 1,
@@ -111,9 +113,9 @@ class Top_Arena_NPC : public CreatureScript
         Top_Arena_NPC() : CreatureScript("arenatop"){}
         
         bool OnGossipHello(Player *player, Creature *creature) {
+            player->ADD_GOSSIP_ITEM(GOSSIP_ICON_INTERACT_1, "Top PvP 1v1.", GOSSIP_SENDER_MAIN, ARENA_5V5_LADDER);
             player->ADD_GOSSIP_ITEM(GOSSIP_ICON_INTERACT_1, "Top PvP 2v2.", GOSSIP_SENDER_MAIN, ARENA_2V2_LADDER);
             player->ADD_GOSSIP_ITEM(GOSSIP_ICON_INTERACT_1, "Top PvP 3v3.", GOSSIP_SENDER_MAIN, ARENA_3V3_LADDER);
-            player->ADD_GOSSIP_ITEM(GOSSIP_ICON_INTERACT_1, "Top PvP 5v5.", GOSSIP_SENDER_MAIN, ARENA_5V5_LADDER);
             
             player->SEND_GOSSIP_MENU(ARENA_GOSSIP_HELLO, creature->GetGUID());
             
@@ -280,7 +282,7 @@ class Top_Arena_NPC : public CreatureScript
         }
 };
 
-void AddMyTopArenaScripts()
+void AddTopArenaScripts()
 {
     new Top_Arena_NPC();
 }
