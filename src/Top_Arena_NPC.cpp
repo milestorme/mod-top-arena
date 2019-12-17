@@ -8,7 +8,7 @@
 #include "ArenaTeam.h"
 #include "ArenaTeamMgr.h"
 #include "World.h"
-#incluee "Player.h"
+#include "Player.h"
 #include "Chat.h"
 
 enum ArenaRankActionIds {
