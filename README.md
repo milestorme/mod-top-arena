@@ -33,10 +33,10 @@ If you need to change the module configuration, go to your server configuration 
 
 
 ## Credits
-
-* [Milestorme](https://github.com/milestorme) 
-* [BarbzYHOOL](https://github.com/barbzyhool)
-* [Talamortis](https://github.com/talamortis)
 * [Poszer](https://github.com/poszer)
+* [Talamortis](https://github.com/talamortis)
+* [Milestorme](https://github.com/milestorme) 
+
+
 
 AzerothCore: [repository](https://github.com/azerothcore) - [website](http://azerothcore.org/) - [discord chat community](https://discord.gg/PaqQRkd)
